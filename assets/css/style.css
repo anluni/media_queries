@@ -35,6 +35,9 @@
     text-align: center;
 }
 
+.input{
+    display: block;
+}
 
 #order-input{
     width: 80%;
@@ -156,7 +159,128 @@
     background-color: #ccc;
 }
 
-,footer{
-    grid-area: footer;
-    
+.maqueta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-color: #373636;
+    color: black;
+    cursor: pointer;
 }
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(245, 242, 239);
+    color: rgb(55, 54, 54);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social:hover{
+    color: #9a9898;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 576px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "aside header header"
+        "aside main main"
+        "footer main main";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 12px;
+    }
+    .header{
+        grid-area: header;
+        background-color: rgb(245, 242, 239);
+        padding: 10px 0;
+        box-shadow: 0 2px 5px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative; 
+    }
+    .header h3{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    
+    #order-input{
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ede6e6;
+        border-radius: 5px;
+    
+    }
+    
+    .menu{
+        display: none;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .sidebar {
+        grid-area: aside;
+        background-color: #9a9898;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    .card{
+        border: 1px solid #ccc;
+        flex: 1 1 calc(25% - 10px);
+        text-align: center;
+        background-color: #ffeed8;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px black;
+        padding: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .footer{
+    grid-area: footer;
+    background-color: rgb(245, 242, 239);
+    color: rgb(55, 54, 54);
+    padding: 20px 0;
+    text-align: center;
+}
+}
+
