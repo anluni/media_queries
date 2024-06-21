@@ -35,6 +35,7 @@
     text-align: center;
 }
 
+
 #order-input{
     width: 80%;
     padding: 10px;
@@ -45,4 +46,117 @@
 
 .menu{
     display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar {
+    grid-area: aside;
+    background-color: #9a9898;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #4e4c4c;
+    cursor: pointer;
+}
+
+.sidebar ul li{
+    margin-bottom: 10px;
+    border-bottom: 10px solid black;
+    padding-bottom: 10px;
+
+}
+
+.highlighted span{
+    font-size: 36px;
+    color: black;
+}
+
+.sidebar h2{
+    font-size: 24px;
+    color: black;
+}
+
+.sidebar h3{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card{
+    border: 1px solid #ccc;
+    flex: 1 1 calc(25% - 10px);
+    text-align: center;
+    background-color: #ffeed8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px black;
+}
+
+.card img{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.card h3{
+    color: #333;
+    margin: 10px 0;
+}
+
+.card p{
+    color: black;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.card button{
+    background-color: #373636;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background- color 0.3s ease;
+}
+
+.card button:hover{
+    background-color: #ccc;
+}
+
+,footer{
+    grid-area: footer;
+    
 }
