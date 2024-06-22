@@ -13,21 +13,22 @@
     <title>Electric Cars Store</title>
 </head>
 <body>
-    <section class="container">
+    <div class="container">
         <header class="header">
-            <h3>Ordenar por</h3>
+            <h4>Ordenar por</h4>
             <input type="order" placeholder="Precio" name="name" id="order-input">
             <span class="mdi mdi-chevron-down"></span>
         </header>
-        <aside class="sidebar">
+
+        <div class="menu">
             <ul>
-                <li class="highlighted">
+                <div class="highlighted">
                     <span class="mdi mdi-car-electric"></span>
                     <h2>Electric Cars</h2>
-                    <div class="hamburguesa">
-                    <span class="mdi mdi-menu"></span>
+                    <div class="pagination">
+                        <span class="mdi mdi-menu"></span>
+                    </div>
                 </div>
-                </li>
                 <li class="menu">
                     <h3>Inicio</h3>
                 </li>
@@ -41,11 +42,12 @@
                     <h3>Contactos</h3>
                 </li>
             </ul>
-        </aside>
+
+        </div>
         <main class="main">
             <div class="card">
                 <img src="./img/bmv_i4.jpg" title="bmv_i4" alt="bmv_i4">
-                <h3>2023 BMW I4 BEV 84KWh EDrive40 Auto M Sport</h3>
+                <h3>2023 BMW I4 BEV 84KWh EDrive40</h3>
                 <p>$64.990.000</p>
                 <button>Ver más</button>
             </div>
@@ -57,13 +59,13 @@
             </div>
             <div class="card">
                 <img src="./img/mini_cooper.jpg" title="mini_cooper" alt="mini_cooper">
-                <h3>2022 MINI Cooper 33KWH SE Mini Electric Iconic</h3>
+                <h3>2022 MINI Cooper 33KWH SE Mini Electric</h3>
                 <p>$23.300.000</p>
                 <button>Ver más</button>
             </div>
             <div class="card">
                 <img src="./img/nissan_leaf.jpg" title="nissan_leaf" alt="nissan_leaf">
-                <h3>Nissan Leaf 2018 LEAF ADVANCE ELECTRIC AT</h3>
+                <h3>Nissan Leaf 2018 LEAF ADVANCE ELECTRIC</h3>
                 <p>$8.990.000</p>
                 <button>Ver más</button>
             </div>
@@ -75,27 +77,40 @@
             </div>
             <div class="card">
                 <img src="./img/volvo_xc40.jpg" title="volvo_xc40" alt="volvo_xc40">
-                <h3>Volvo Xc40 2022 ELECTRICO P8 R-DESIGN AWD AT 5P</h3>
+                <h3>Volvo Xc40 2022 ELECTRICO P8</h3>
                 <p>$4.690.000</p>
                 <button>Ver más</button>
             </div>
+            <div class="card">
+                <img src="./img/Renault-Kangoo.jpg" title="renault_kangoo" alt="renault_kangoo">
+                <h3>Renault Kangoo Express 2022</h3>
+                <p>$18.990.000</p>
+                <button>Ver más</button>
+            </div>
+            <div class="card">
+                <img src="./img/Volvo Xc40 2022 ELECTRICO.jpg" title="volvo_xc40" alt="volvo_xc40">
+                <h3>Volvo Xc40 2022 ELECTRICO</h3>
+                <p>$45.190.000</p>
+                <button>Ver más</button>
+            </div>
+            <div class="pagination">
+                <span class="mdi mdi-chevron-double-left"></span>
+                <p class="num">1</p>
+                <p class="num">2</p>
+                <p class="num">3</p>
+                <span class="mdi mdi-chevron-double-right"></span>
+            </div>
         </main>
-        <div class="maqueta">
-            <span class="mdi mdi-chevron-double-left"></span>
-            <p class="num">1</p>
-            <p class="num">2</p>
-            <p class="num">3</p>
-            <span class="mdi mdi-chevron-double-right"></span>
-        </div>
         <footer class="footer">
+            <span class="mdi mdi-facebook"></span>
+            <span class="mdi mdi-instagram"></span>
             <div class="footer-content">
                 <p>&copy; 2024 Electric Cars Store. Todos los derechos reservados. Andrea Luna Vargas</p>
                 <div class="social">
-                    <span class="mdi mdi-facebook"></span>
-                    <span class="mdi mdi-instagram"></span>
                 </div>
             </div>
         </footer>
-    </section>
+    </div>
+
 </body>
 </html>
