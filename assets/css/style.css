@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+     
 }
 
 .navbar-logo {
@@ -60,6 +61,7 @@
     display: block;
     padding: 1rem;
     color: white;
+
 }
 
 .nav-link:hover {
@@ -118,11 +120,14 @@
     border: 1px solid #8f1c51;
     border-radius: 1rem;
     padding: 1rem;
+    transition: all 0.5s;
+    transform: translateX(2%);
 }
 
 .pel:hover {
     border: 1px solid #e84e96;
     box-shadow: 0 0 0 2px #8f1c51(0, 131, 194, 0.1);
+    transform: translateX(0);
 }
 
 .peluche-img {
@@ -157,7 +162,7 @@
 
 .pel-btn:hover {
     background-color: #8f1c51;
-    color: #eca5c6;
+    color: #e5f00b;
 }
 
 .pagination {
@@ -167,7 +172,7 @@
 }
 
 .page-link {
-    background-color: #8f1c51;
+    background-color: #e84e96;
     border: 1px solid #8f1c51;
     color: #fff;
     padding: 0.7rem 1rem;
